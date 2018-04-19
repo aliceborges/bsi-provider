@@ -1,4 +1,5 @@
 
+
 # bsi-provider
 Consumindo api's web usando recursos do Ionic/
 
@@ -16,3 +17,6 @@ A documentação sugere o uso do classe HttpCliente para acesso a *serviços web
 
 Por se tratar de um *observable* podemos fazer uso dos métodos *subscribe* para obter o retorno assim que pronto.
 É comum também, encontramos materiais que em métodos que consultam *serviços web*, encapsulados como um *Promisse.* Isso porquê as vezes é necessários encadearmos chamadas assíncronas.
+
+**Nota**
+Para testar sua aplicação é necessário você baixá-la e executar o comando npm install para que as dependências sejam baixadas. 
