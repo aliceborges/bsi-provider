@@ -6,9 +6,21 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding >
+
+<!-- <div *ngIf="posts.length === 0; else lista"  >
+  não existem posts cadastrados
+</div> -->
+
+<!-- <ng-template #lista > -->
+
+  <ion-list >
+    <ion-item *ngFor="let post of posts" (tap)="abrirPosts(post.id)"  >
+      <h3>{{ post.title }}</h3>
+      {{post.id}}
+    </ion-item>
+  </ion-list>
+
+<!-- </ng-template> -->
+
 </ion-content>
